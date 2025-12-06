@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM, {  } from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, redirect } from 'react-router-dom';
 import Layout from './Layout';
 import Profile from './components/Profile';
 import BankData from './components/BankData';
@@ -31,6 +31,28 @@ const router = createBrowserRouter([
       <BankData />
     </Layout>
     )
+  },
+  {
+    path: "fintoc",
+    loader: () => {
+      window.location.href = "https://fintoc.me/federico";
+      return null;
+    },
+  },
+  {
+    path: "bitcoin",
+    loader: () => {
+      window.location.href = "https://www.buda.com/link/fede";
+      return null;
+    },
+  },
+  {
+    path: "pay-me-or-die",
+    loader: () => redirect("/datos"),
+  },
+  {
+    path: "pay-me-bitch",
+    loader: () => redirect("/datos"),
   },
 ]);
 

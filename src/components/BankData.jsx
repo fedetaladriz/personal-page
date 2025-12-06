@@ -3,7 +3,7 @@ import check from '../logos/check.png';
 import React, { useState } from 'react';
 
 const data = {
-    'Nombre': 'Federico Taladriz',
+    'Nombre': 'Federico Taladriz Bengoa',
     'RUT': '19519358-4',
     'Banco': 'Banco de Chile',
     'Tipo': 'Cuenta Corriente',
@@ -69,14 +69,16 @@ const BankData = () => (
             ))}
         </table>
         <CopyAllButton />
-        
         <div className='text-l mt-4 text-white'>
-            También me puedes pagar con ₿itcoin mediante Lightning Network ⚡ siguiendo
+            También me puedes
             {' '}
-            <a className='underline' href='https://www.buda.com/link/fede'>este link</a>
+            <a className='underline' href='https://fintoc.me/federico'>pagar con Fintoc ⏸️</a>
+            {' '}
+            o con
+            {' '}
+            <a className='underline' href='https://www.buda.com/link/fede'>₿itcoin mediante Lightning Network ⚡</a>
             .
         </div>
-
     </div>
 );
 
